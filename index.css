@@ -1,0 +1,79 @@
+body{
+	background: linear-gradient(90deg, rgba(161,0,37,1) 0%, rgba(237,44,69,1) 100%);
+}
+
+#wrapper{
+	margin-right: auto;
+	margin-left: auto;
+	width: 250px;
+	/*border:1px solid black;*/
+	margin-top: 14%;
+	padding-bottom: 50px;
+}
+
+.logo img{
+	width: 170px;
+}
+
+form{
+	margin-top: 50px;
+}
+.text-box{
+	width: 100%;
+	overflow: hidden;
+	font-size: 20px;
+	padding: 15px 0;
+	margin: 8px 0;
+	border-top: 1px solid rgba(255,255,255,0.3);
+}
+.text-box img{
+	float: left;
+	width: 20px;
+}
+.text-box input{
+	border: none;
+	outline: none;
+	background: none;
+	color: white;
+	font-size: 14px;
+	font-family: "Open Sans";
+	float: left;
+	margin: 0 10px;
+}
+.text-box input::placeholder{
+	color: rgba(255,255,255,0.5);
+	letter-spacing: 1px;
+}
+label{
+	font-family: "Open Sans";
+	font-size: 10px;
+	color: #fff;
+	letter-spacing: 2px;
+}
+.btn{
+	margin-top: 50px;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	letter-spacing: 1px;
+	background-color: #fff;
+	border: transparent;
+	border-radius: 5px;
+	font-family: "Open Sans";
+	font-size: 12px;
+	color: grey;
+	font-weight: bold;
+	cursor: pointer;
+	transition: background-color 0.5s;
+}
+.btn:hover{
+	background-color: #E4E4E4;
+}
+@font-face {font-family: "Open Sans";
+  src: url("src/fonts/open-sans/629a55a7e793da068dc580d184cc0e31.eot"); /* IE9*/
+  src: url("src/fonts/open-sans/629a55a7e793da068dc580d184cc0e31.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("src/fonts/open-sans/629a55a7e793da068dc580d184cc0e31.woff2") format("woff2"), /* chrome、firefox */
+  url("src/fonts/open-sans/629a55a7e793da068dc580d184cc0e31.woff") format("woff"), /* chrome、firefox */
+  url("src/fonts/open-sans/629a55a7e793da068dc580d184cc0e31.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("src/fonts/open-sans/629a55a7e793da068dc580d184cc0e31.svg#Open Sans") format("svg"); /* iOS 4.1- */
+}

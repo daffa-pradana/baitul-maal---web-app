@@ -1,0 +1,531 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	background-color: #EDF2F4;
+}
+
+/*Navbar*/
+nav{
+	position: fixed; /* To Make it Float */
+	top: 0; /*position*/
+	left: 0; /*position*/
+	width: 80px; /*navbar width */
+	height: 100%; /*Make navbar cover straight to bottom*/
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	padding-top: 20px;
+}
+
+/*Navbar logo*/
+.logo img{
+	width: 40px;
+	margin-left: 20px;
+}
+
+/*User profile*/
+.profile-box{
+	margin-top: 20px;
+	margin-left: 20px;
+	width: 220px;
+	letter-spacing: 1px;
+	font-size: 20px;
+	background-color: rgb(161,0,37);
+	background: linear-gradient(90deg, rgba(161,0,37,1) 0%, rgba(237,44,69,1) 100%);
+	padding-top: 5px;
+	padding-bottom: 10px;
+	-webkit-box-shadow: 7px 10px 13px 0px rgba(0,0,0,0.3);
+	-moz-box-shadow: 7px 10px 13px 0px rgba(0,0,0,0.3);
+	box-shadow: 7px 10px 13px 0px rgba(0,0,0,0.3);
+}
+.profile-box img{
+	width: 50px;
+	border-radius: 50%;
+	margin-top: 5px; 
+}
+
+.profile-box table td{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.profile-box table{
+	margin-left: 10px;
+}
+.nama{
+	vertical-align: middle;
+}
+.nama h5{
+	font-family: "Open Sans";
+	font-weight: bold;
+	color: #fff;
+}
+.jabatan{
+	color: #fff;
+	font-family: "Open Sans";
+	font-size: 9pt;
+	letter-spacing: 1px;
+	margin-top: 3px;
+}
+
+/*Navbar menu*/
+.main-menu{
+	margin-top: 50px;
+}
+.main-menu img{
+	width: 25px;
+	margin-left: 25px;
+}
+.menu-active{
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border-left: 3px solid #EF233C;
+}
+.keluar{
+	background: #EF233C;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.keluar:hover{
+	background: #D80032;
+}
+.menu{
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border-left: 3px solid #fff;
+}
+.menu1:hover{
+	border-left: 3px solid #EF233C;
+}
+.menu2:hover{
+	border-left: 3px solid #EF233C;
+}
+
+/*Main page*/
+main{
+	margin-left: 80px;
+}
+.section1{
+	width: 100%;
+	padding-top: 130px;
+}
+.section1 hr{
+	width: 600px;
+	color: #EDF2F4;
+}
+.karyawan p{
+	font-family: "Open Sans";
+	font-weight: bold;
+	color: #EF233C;
+	margin-left:400px;
+	letter-spacing: 3px;
+	font-size: 40px;
+}
+.acara p{
+	font-family: "Open Sans";
+	font-weight: bold;
+	color: #EF233C;
+	margin-left:485px;
+	letter-spacing: 3px;
+	font-size: 40px;
+}
+.tambah p{
+	font-family: "Open Sans";
+	font-weight: bold;
+	color: #EF233C;
+	margin-left:220px;
+	letter-spacing: 3px;
+	font-size: 40px;
+}
+.separator{
+	margin-top: 5px;
+}
+
+/* AS-PAGE1.PHP 
+ --------------------------------------------------------------------------------------- */
+/*Karyawan table*/
+.karyawan-table-area{
+	padding-left: 20px;
+	padding-top: 40px;
+	padding-bottom: 20px;
+	width: 	1600px;
+}
+.karyawan-table{
+	font-family: "Open Sans";
+  	color: #2B2D42;
+  	font-size: 12px;
+  	border-collapse: collapse;
+  	table-layout: fixed;
+  	width: 95%;
+}
+.karyawan-table th{
+	padding-bottom: 5px;
+}
+.karyawan-record{
+	background-color: #ffffff;
+	border-top: 5px solid #EDF2F4;
+}
+.karyawan-record:hover{
+	background-color: #E3E7E9;
+}
+.karyawan-record td{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.id_k{
+	width: 2%;
+	text-align: center;
+	border-bottom-left-radius: 10px;
+	border-top-left-radius: 10px;
+}
+.foto_k{
+	width: 5%;
+	text-align: center;
+	vertical-align: middle;
+}
+.foto_k img{
+	width: 40px;
+	border-radius: 50%;
+}
+.nama_k{
+	width: 8%;
+	text-align: left;
+}
+.jk_k{
+	width: 5%;
+	text-align: center;
+}
+.email_k{
+	width: 12%;
+	text-align: center;
+}
+.jabatan_k{
+	width: 10%;
+	text-align: center;
+}
+.hp_k{
+	width: 8%;
+	text-align: center;
+}
+.tgl_k{
+	width: 10%;
+	text-align: center;
+}
+.nik_k{
+	width: 10%;
+	text-align: center;
+}
+.npwp_k{
+	width: 10%;
+	text-align: center;
+}
+.kk_k{
+	width: 10%;
+	text-align: center;
+}
+.status_k{
+	width: 5%;
+	text-align: center;
+}
+.act_k{
+	width: 5%;
+	text-align: center;
+	border-bottom-right-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.act_k img{
+	width: 20px;
+	border-radius: 5px;
+}
+
+
+
+/*Karyawan form*/
+.karyawan-form-area{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	width: 800px;
+}
+.karyawan-form-area form{
+	width: 70%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 5%;
+	padding-right: 5%;
+	background-color: #ffffff;
+	border-radius: 5px;
+}
+.karyawan-form-area h3{
+	font-family: "Open Sans";
+	letter-spacing: 1px;
+	color: #D80032;
+	text-align: center;	
+}
+.karyawan-border-form{
+	border: 1px solid #E3E7E9;
+	border-radius: 5px;
+	margin-top: 10px;
+	padding-bottom: 40px;
+}
+.karyawan-border-form table{
+	border-collapse: collapse;
+	table-layout: fixed;
+  	width: 500px;
+}
+.karyawan-border-form td{
+	padding-top: 20px;
+}
+#karyawan-form-label{
+	width: 130px;
+	padding-right: 20px;
+	font-family: "Open Sans";
+	font-size: 14px;
+}
+#karyawan-form-input{
+	width: 350px;
+}
+
+.radio1{
+	font-family: "Open Sans";
+	margin-right: 2%;
+	margin-left: 1%;
+	font-size: 13px;
+}
+.radio2{
+	font-family: "Open Sans";
+	font-size: 13px;
+	margin-right: 2%;
+	margin-left: 1%;
+}
+#karyawan-form-input input[type=text]{
+	width: 100%;
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 3px 5px;
+	border-radius: 5px;
+	border: 1px solid  #8D99AE;
+}
+#karyawan-form-input input[type=password]{
+	width: 100%;
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 3px 5px;
+	border-radius: 5px;
+	border: 1px solid  #8D99AE;
+}#karyawan-form-input select{
+	width: 60%;
+	padding: 3px 5px;
+	border-radius: 5px;
+	border: 1px solid  #8D99AE;
+}
+#karyawan-form-file input{
+	margin-top: 30px;
+	margin-left: 20%;
+}
+#karyawan-form-btn button{
+	margin-top: 90px;
+	padding: 5px 50px;
+	background-color: #EF233C;
+	color: #ffffff;
+	font-family: "Open Sans";
+	border: 1px solid #EF233C;
+	border-radius: 5px;
+}
+#karyawan-form-btn button:hover{
+	background-color: #D80032;
+	border: 1px solid #D80032;
+	cursor: pointer;
+}
+#karyawan-form-file input[type=file]{
+	display: none;
+}
+#karyawan-form-file img{
+	width: 12px;
+}
+#karyawan-form-file label{
+	color: #8D99AE;
+	font-size: 12px;
+	font-family: "Open Sans";
+	margin-top: 30px;
+	margin-left: 200px;
+	background-color: #EDF2F4;
+	border-radius: 5px;
+	width: 150px;
+	height: 30px;
+	position: absolute;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}
+#karyawan-form-file label:hover{
+	background-color: #E3E7E9;
+	cursor: pointer;
+}
+
+/* AS-PAGE2.PHP 
+ --------------------------------------------------------------------------------------- */
+/* Acara content */
+
+.acara-table-area{
+	padding-left: 20px;
+	padding-top: 40px;
+	padding-bottom: 20px;
+	width: 	1500px;
+}
+.acara-table{
+	font-family: "Open Sans";
+  	color: #2B2D42;
+  	font-size: 12px;
+  	border-collapse: collapse;
+  	table-layout: fixed;
+  	width: 95%;
+}
+.acara-table th{
+	padding-bottom: 5px;
+}
+.acara-record {
+	background-color: #ffffff;
+	border-top: 5px solid #EDF2F4;
+}
+.acara-record td{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.no_a{
+	width: 5%;
+	text-align: center;
+}
+.tgl_b_a{
+	width: 10%;
+	text-align: center;
+}
+.hd_a{
+	color: #EF233C;
+	width: 15%;	
+	text-align: center;
+	vertical-align: middle;
+}
+.hd_a-box{
+	background-color: #EDF2F4;
+	width: 60%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-weight: bold;
+	border-radius: 50px;
+}
+.tgl_a{
+	width: 10%;
+	text-align: center;	
+}
+.ctt_a{
+	width: 25%;
+	text-align: left;	
+}
+.pst_a{
+	width: 25%;
+	text-align: left;
+}
+.act_a{
+	width: 10%;
+	text-align: center;
+}
+.act_a img{
+	width: 20px;
+	border-radius: 5px;
+}
+.acara-form-area{
+	width: 500px;
+	padding-left: 20px;
+	padding-bottom: 20px;
+}
+.acara-form-area h3{
+	font-family: "Open Sans";
+	letter-spacing: 1px;
+	color: #D80032;
+	text-align: center;
+	margin-bottom: 5px;
+}
+.acara-form-area form{
+	width: 90%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #ffffff;
+	border-radius: 5px;
+}
+.acara-form-border{
+	border: 1px solid #E3E7E9;
+	border-radius: 5px;
+	padding-bottom: 20px;
+	padding-top: 10px;
+	width: 90%;
+}
+.acara-form{
+	border-collapse: collapse;
+	table-layout: fixed;
+	width: 90%;
+}
+.acara-form td{
+	padding-top: 15px;
+}
+.acara-form-label{
+	padding-right: 4%;
+	width: 30%;
+	font-family: "Open Sans";
+	font-size: 14px;
+}
+.acara-form-input{
+	width: 70%;
+}
+.acara-form-input input[type=text]{
+	width: 100%;
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 3px 5px;
+	border-radius: 5px;
+	border: 1px solid  #8D99AE;
+}
+.acara-form-input input[type=datetime-local]{
+	width: 100%;
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 3px 5px;
+	border-radius: 5px;
+	border: 1px solid  #8D99AE;
+}
+.acara-form-checkbox{
+	font-family: "Open Sans";
+	font-size: 11px;
+}
+.acara-form-input input[type=checkbox]{
+	margin-top: 10px;
+}
+.acara-form-btn button{
+	margin-top: 20px;
+	padding: 5px 50px;
+	background-color: #EF233C;
+	color: #ffffff;
+	font-family: "Open Sans";
+	border: 1px solid #EF233C;
+	border-radius: 5px;
+}
+.acara-form-btn button:hover{
+	background-color: #D80032;
+	border: 1px solid #D80032;
+	cursor: pointer;
+}
+@font-face {font-family: "Open Sans";
+  src: url("../src/fonts/open-sans/629a55a7e793da068dc580d184cc0e31.eot"); /* IE9*/
+  src: url("../src/fonts/open-sans/629a55a7e793da068dc580d184cc0e31.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("../src/fonts/open-sans/629a55a7e793da068dc580d184cc0e31.woff2") format("woff2"), /* chrome、firefox */
+  url("../src/fonts/open-sans/629a55a7e793da068dc580d184cc0e31.woff") format("woff"), /* chrome、firefox */
+  url("../src/fonts/open-sans/629a55a7e793da068dc580d184cc0e31.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("../src/fonts/open-sans/629a55a7e793da068dc580d184cc0e31.svg#Open Sans") format("svg"); /* iOS 4.1- */
+}

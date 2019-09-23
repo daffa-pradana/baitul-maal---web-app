@@ -1,0 +1,742 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	background-color: #EDF2F4;
+}
+
+/*Navbar*/
+nav{
+	position: fixed; /* To Make it Float */
+	top: 0; /*position*/
+	left: 0; /*position*/
+	width: 80px; /*navbar width */
+	height: 100%; /*Make navbar cover straight to bottom*/
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	padding-top: 20px;
+}
+
+/*Navbar logo*/
+.logo img{
+	width: 40px;
+	margin-left: 20px;
+}
+
+/*User profile*/
+.profile-box{
+	margin-top: 20px;
+	margin-left: 20px;
+	width: 220px;
+	letter-spacing: 1px;
+	font-size: 20px;
+	background-color: rgb(161,0,37);
+	background: linear-gradient(90deg, rgba(161,0,37,1) 0%, rgba(237,44,69,1) 100%);
+	padding-top: 5px;
+	padding-bottom: 10px;
+	-webkit-box-shadow: 7px 10px 13px 0px rgba(0,0,0,0.3);
+	-moz-box-shadow: 7px 10px 13px 0px rgba(0,0,0,0.3);
+	box-shadow: 7px 10px 13px 0px rgba(0,0,0,0.3);
+}
+.profile-box img{
+	width: 50px;
+	border-radius: 50%;
+	margin-top: 5px; 
+}
+
+.profile-box table td{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.profile-box table{
+	margin-left: 10px;
+}
+.nama{
+	vertical-align: middle;
+}
+.nama h5{
+	font-family: "Open Sans";
+	font-weight: bold;
+	color: #fff;
+}
+.jabatan{
+	color: #fff;
+	font-family: "Open Sans";
+	font-size: 9pt;
+	letter-spacing: 1px;
+	margin-top: 3px;
+}
+
+/*Navbar menu*/
+.main-menu{
+	margin-top: 50px;
+}
+.main-menu img{
+	width: 25px;
+	margin-left: 25px;
+}
+.menu-active{
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border-left: 3px solid #EF233C;
+}
+.keluar{
+	background: #EF233C;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.keluar:hover{
+	background: #D80032;
+}
+.menu{
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border-left: 3px solid #fff;
+}
+.menu1:hover{
+	border-left: 3px solid #EF233C;
+}
+.menu2:hover{
+	border-left: 3px solid #EF233C;
+}
+.menu3:hover{
+	border-left: 3px solid #EF233C;
+}
+
+/*Main page*/
+main{
+	margin-left: 80px;
+}
+.section1{
+	width: 100%;
+	padding-top: 130px;
+}
+.section1 hr{
+	width: 600px;
+	color: #EDF2F4;
+}
+.nasabah p{
+	font-family: "Open Sans";
+	font-weight: bold;
+	color: #EF233C;
+	margin-left:320px;
+	letter-spacing: 1px;
+	font-size: 40px;
+}
+.pembiayaan p{
+	font-family: "Open Sans";
+	font-weight: bold;
+	color: #EF233C;
+	margin-left:250px;
+	letter-spacing: 1px;
+	font-size: 40px;
+}
+.database p{
+	font-family: "Open Sans";
+	font-weight: bold;
+	color: #EF233C;
+	margin-left:235px;
+	letter-spacing: 1px;
+	font-size: 40px;
+}
+.acara p{
+	font-family: "Open Sans";
+	font-weight: bold;
+	color: #EF233C;
+	margin-left:490px;
+	letter-spacing: 1px;
+	font-size: 40px;
+}
+/* TELLER-PAGE1.PHP 
+ --------------------------------------------------------------------------------------- */
+/*Nasabah Form*/
+.nasabah-form-area{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	width: 1000px;
+}
+.nasabah-form-area form{
+	width: 80%;
+	padding-top: 20px;
+	padding-bottom: 30px;
+	padding-left: 5%;
+	padding-right: 5%;
+	background-color: #ffffff;
+	border-radius: 5px;
+}
+.nasabah-form-area h3{
+	font-family: "Open Sans";
+	letter-spacing: 1px;
+	color: #D80032;
+	text-align: center;	
+}
+.nasabah-border-form{
+	border: 1px solid #E3E7E9;
+	border-radius: 5px;
+	margin-top: 10px;
+	padding-top: 10px;
+	padding-bottom: 40px;
+}
+.nasabah-border-form table{
+	border-collapse: collapse;
+	table-layout: fixed;
+  	width: 80%;
+}
+.nasabah-border-form td{
+	padding-top: 20px;
+}
+#nasabah-form-label{
+	width: 30%;
+	padding-right: 20px;
+	font-family: "Open Sans";
+	font-size: 14px;
+}
+#nasabah-form-input{
+	width: 70%;
+}
+
+.radio1{
+	font-family: "Open Sans";
+	margin-right: 2%;
+	margin-left: 1%;
+	font-size: 13px;
+}
+.radio2{
+	font-family: "Open Sans";
+	font-size: 13px;
+	margin-right: 2%;
+	margin-left: 1%;
+}
+#nasabah-form-input input[type=text]{
+	width: 100%;
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 3px 5px;
+	border-radius: 5px;
+	border: 1px solid  #8D99AE;
+}
+#nasabah-form-input-rtrw input[type=text]{
+	width: 20%;
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 3px 5px;
+	border-radius: 5px;
+	border: 1px solid  #8D99AE;
+}
+#nasabah-form-input-rtrw input:nth-child(2){
+	margin-left: 2%;
+}
+#nasabah-form-input input[type=password]{
+	width: 100%;
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 3px 5px;
+	border-radius: 5px;
+	border: 1px solid  #8D99AE;
+}#nasabah-form-input select{
+	width: 60%;
+	padding: 3px 5px;
+	border-radius: 5px;
+	border: 1px solid  #8D99AE;
+}
+#nasabah-form-file input{
+	margin-top: 30px;
+	margin-left: 20%;
+}
+#nasabah-form-btn button{
+	margin-top: 30px;
+	padding: 5px 50px;
+	background-color: #EF233C;
+	color: #ffffff;
+	font-family: "Open Sans";
+	border: 1px solid #EF233C;
+	border-radius: 5px;
+}
+#nasabah-form-btn button:hover{
+	background-color: #D80032;
+	border: 1px solid #D80032;
+	cursor: pointer;
+}
+#nasabah-form-file input[type=file]{
+	display: none;
+}
+#nasabah-form-file img{
+	width: 12px;
+}
+#nasabah-form-file label{
+	color: #8D99AE;
+	font-size: 12px;
+	font-family: "Open Sans";
+	margin-top: 30px;
+	margin-left: 200px;
+	background-color: #EDF2F4;
+	border-radius: 5px;
+	width: 150px;
+	height: 30px;
+	position: absolute;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}
+#nasabah-form-file label:hover{
+	background-color: #E3E7E9;
+	cursor: pointer;
+}
+
+/* TELLER-PAGE2.PHP 
+ --------------------------------------------------------------------------------------- */
+/*Form Pembiayaan*/
+.pembiayaan-form-area{
+	margin-bottom: 50px;
+	width: 1000px;
+}
+.pembiayaan-form-area form{
+	width: 80%;
+	padding-top: 20px;
+	padding-bottom: 30px;
+	padding-left: 5%;
+	padding-right: 5%;
+	background-color: #ffffff;
+	border-radius: 5px;
+	margin-top: 5%;
+}
+.pembiayaan-form-area h3{
+	font-family: "Open Sans";
+	letter-spacing: 1px;
+	color: #D80032;
+	text-align: center;	
+}
+.pembiayaan-border-form{
+	border: 1px solid #E3E7E9;
+	border-radius: 5px;
+	margin-top: 10px;
+	padding-top: 10px;
+	padding-bottom: 40px;
+}
+.pembiayaan-border-form table{
+	border-collapse: collapse;
+	table-layout: fixed;
+  	width: 80%;
+}
+.pembiayaan-border-form td{
+	padding-top: 20px;
+}
+#pembiayaan-form-label{
+	width: 30%;
+	padding-right: 20px;
+	font-family: "Open Sans";
+	font-size: 14px;
+}
+#pembiayaan-form-input{
+	width: 70%;
+}
+#pembiayaan-form-input-id_n select{
+	width: 10%;
+	padding: 3px 5px;
+	border-radius: 5px;
+	border: 1px solid  #8D99AE;
+}
+#pembiayaan-form-input-jml_kar_u input{
+	width: 20%;
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 3px 5px;
+	border-radius: 5px;
+	border: 1px solid  #8D99AE;
+}
+#pembiayaan-form-input textarea{
+	width: 100%;
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 3px 5px;
+	border-radius: 5px;
+	border: 1px solid  #8D99AE;
+}
+.radio1{
+	font-family: "Open Sans";
+	margin-right: 2%;
+	margin-left: 1%;
+	font-size: 13px;
+}
+.radio2{
+	font-family: "Open Sans";
+	font-size: 13px;
+	margin-right: 2%;
+	margin-left: 1%;
+}
+.radio3{
+	font-family: "Open Sans";
+	font-size: 13px;
+	margin-right: 2%;
+	margin-left: 1%;
+}
+#pembiayaan-form-input input[type=text]{
+	width: 100%;
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 3px 5px;
+	border-radius: 5px;
+	border: 1px solid  #8D99AE;
+}
+.input-date{
+	margin-left: 2%;
+}
+#pembiayaan-form-input input[type=date]{
+	width: 30%;
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 3px 5px;
+	border-radius: 5px;
+	border: 1px solid  #8D99AE;
+}
+.tgl-akhir{
+	margin-left: 2%;
+}
+#pembiayaan-form-input-rtrw input[type=text]{
+	width: 20%;
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 3px 5px;
+	border-radius: 5px;
+	border: 1px solid  #8D99AE;
+}
+#pembiayaan-form-input-rtrw input:nth-child(2){
+	margin-left: 2%;
+}
+#pembiayaan-form-input input[type=password]{
+	width: 100%;
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 3px 5px;
+	border-radius: 5px;
+	border: 1px solid  #8D99AE;
+}#pembiayaan-form-input select{
+	width: 60%;
+	padding: 3px 5px;
+	border-radius: 5px;
+	border: 1px solid  #8D99AE;
+}
+#pembiayaan-form-file input{
+	margin-top: 30px;
+	margin-left: 20%;
+}
+#pembiayaan-form-btn button{
+	margin-top: 30px;
+	padding: 5px 50px;
+	background-color: #EF233C;
+	color: #ffffff;
+	font-family: "Open Sans";
+	border: 1px solid #EF233C;
+	border-radius: 5px;
+}
+#pembiayaan-form-btn button:hover{
+	background-color: #D80032;
+	border: 1px solid #D80032;
+	cursor: pointer;
+}
+#pembiayaan-form-file input[type=file]{
+	display: none;
+}
+#pembiayaan-form-file img{
+	width: 12px;
+}
+#pembiayaan-form-file label{
+	color: #8D99AE;
+	font-size: 12px;
+	font-family: "Open Sans";
+	margin-top: 30px;
+	margin-left: 200px;
+	background-color: #EDF2F4;
+	border-radius: 5px;
+	width: 150px;
+	height: 30px;
+	position: absolute;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}
+#pembiayaan-form-file label:hover{
+	background-color: #E3E7E9;
+	cursor: pointer;
+}
+/* TELLER-PAGE3.PHP 
+ --------------------------------------------------------------------------------------- */
+/*Database Nasabah*/
+.database-content{
+	width: 1100px;
+	height: 700px;
+	padding-top: 70px;
+	padding-left: 80px;
+}
+.database-table{
+	border-collapse: collapse;
+	table-layout: fixed;
+  	width: 30%;
+  	float: left;
+  	font-family: "Open sans";
+  	font-size: 13px;
+  	overflow-y: scroll;
+  	height: 300px;
+}
+.database-table td{
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.nasabah-record{
+	background-color: #ffffff;
+	border-top: 4px solid #EDF2F4;
+}
+.id_n-record{
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+}
+.id_n-db{
+	width: 15%;
+	text-align: center;
+}
+.nama_n-db{
+	width: 65%;
+	text-align: left;
+}
+.nama_n-db span{
+	margin-left: 10%;
+}
+.act-db{
+	width: 20%;
+}
+.act-record{
+	background-color: #E3E7E9;
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.act-record img{
+	width: 20px;
+}
+.act-record a{
+	text-decoration: none;
+	margin-left: 30%;
+}
+.act-record:hover{
+	background-image: linear-gradient(to right, #D80032 , #EF233C);
+	background-color: #8D99AE;
+	
+}
+.nasabah-data-area{
+	width: 45%;
+	padding-top: 25px;
+	margin-left: 5%;
+	float: left;
+}
+.foto{
+	width: 100px;
+	margin-left: 15%;
+	border: 2px solid #ffffff;
+	border-radius: 50%;
+}
+#foto-nasabah{
+	width: 30%;
+}
+#profile-nasabah{
+	width: 70%;
+}
+#profile-nasabah input{
+	border: none;
+	outline: none;
+	background: none;
+	font-family: "Open Sans";
+}
+.nama-nasabah{
+	font-size: 22px;
+	letter-spacing: 1px;
+	font-weight: 900;
+	color: #D80032;
+}
+.id-nasabah{
+	font-size: 14px;
+	letter-spacing: 1px;
+	font-weight: bold;
+	color:#8D99AE;
+	font-family: "Open sans";
+}
+.nasabah-data-border{
+	border: 2px solid transparent;
+	border-radius: 5px;
+	width: 100%;
+	height: 470px;
+	background-color: #ffffff;
+	padding-bottom:	10px;
+	position: relative;
+	-webkit-box-shadow: 10px 10px 26px -1px rgba(153,151,153,1);
+	-moz-box-shadow: 10px 10px 26px -1px rgba(153,151,153,1);
+	box-shadow: 10px 10px 26px -1px rgba(153,151,153,1);
+}
+.nasabah-data-profile{
+	width: 100%;
+
+	position: absolute;
+	top: -60px;
+}
+.nasabah-data-detail{
+	width: 90%;
+	margin-left: 5%;
+	margin-top: 60px;
+	color: #2B2D42;
+}
+.nasabah-data-detail tr{
+	border-top: 5px solid #EDF2F4;
+}
+#nasabah-data-label{
+	width: 40%;
+}
+#nasabah-data-content{
+	width: 60%;
+}
+#nasabah-data-label{
+	border: none;
+	outline: none;
+	background: none;
+	font-size: 12px;
+	font-family: "Open Sans";
+	color: #2B2D42;
+}
+#nasabah-data-content input{
+	border: none;
+	outline: none;
+	background: none;
+	width: 90%;
+	font-family: "Open Sans";
+	margin-left: 5%;
+	font-size: 12px;
+	color: #2B2D42;
+}
+.rt-nasabah{
+	border: none;
+	outline: none;
+	background: none;
+	width: 15%;
+	font-family: "Open Sans";
+	margin-left: 5%;
+}
+.rw-nasabah{
+	border: none;
+	outline: none;
+	background: none;
+	width: 15%;
+	font-family: "Open Sans";
+	margin-left: 2%;
+}
+.perbarui-btn{
+	margin-top: 18px;
+	border: none;
+	border-radius: 5px;
+	background-color: #EF233C;
+	color: #ffffff;
+	font-family: "Open sans";
+	padding: 5px;
+	font-size: 11px;
+}
+.perbarui-btn-disabled{
+	margin-top: 18px;
+	border: none;
+	border-radius: 5px;
+	background-color: #E3E7E9;
+	color: #8D99AE;
+	font-family: "Open sans";
+	padding: 5px;
+	font-size: 11px;
+}
+.perbarui-btn:hover{
+	cursor: pointer;
+	background-color: #D80032;
+}
+
+/* TELLER-PAGE4.PHP 
+ --------------------------------------------------------------------------------------- */
+/*acara table*/
+.acara-table-section{
+	width: 1300px;
+	padding-left: 50px;
+	padding-top: 30px;
+}
+.acara-table{
+	border-collapse: collapse;
+	width: 95%;
+	table-layout: fixed;
+	font-family: "Open sans";
+}
+.acara-record{
+	background-color: #ffffff;
+	font-size: 12px;
+	border-top: 3px solid #EDF2F4;
+}
+.acara-head{
+	font-size: 15px;
+}
+.acara-head th{
+	padding: 10px
+}
+.acara-record td{
+	padding: 10px;
+}
+.no-acara{
+	width: 5%;
+	text-align: center;	
+}
+.no-acara-record{
+	width: 5%;
+	text-align: center;
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px; 	
+}
+.acara-record:hover{
+	background-color: #E3E7E9;
+}
+.headline-acara{
+	width: 15%;
+	text-align: center;
+}
+.headline-acara-record{
+	width: 15%;
+	text-align: center;
+	font-weight: bold;
+	color: #D80032;
+}
+.tgl-acara{
+	width: 15%;
+	text-align: center;
+}
+.tgl-acara-record{
+	width: 15%;
+	text-align: center;
+}
+.catatan-acara{
+	width: 15%;
+	text-align: left;
+}
+.catatan-acara-record{
+	width: 15%;
+	text-align: left;
+}
+.peserta-acara{
+	width: 50%;
+	text-align: left;
+}
+.peserta-acara-record{
+	width: 50%;
+	text-align: left;
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
+}
+@font-face {font-family: "Open Sans";
+  src: url("../src/fonts/open-sans/629a55a7e793da068dc580d184cc0e31.eot"); /* IE9*/
+  src: url("../src/fonts/open-sans/629a55a7e793da068dc580d184cc0e31.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("../src/fonts/open-sans/629a55a7e793da068dc580d184cc0e31.woff2") format("woff2"), /* chrome、firefox */
+  url("../src/fonts/open-sans/629a55a7e793da068dc580d184cc0e31.woff") format("woff"), /* chrome、firefox */
+  url("../src/fonts/open-sans/629a55a7e793da068dc580d184cc0e31.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("../src/fonts/open-sans/629a55a7e793da068dc580d184cc0e31.svg#Open Sans") format("svg"); /* iOS 4.1- */
+}
