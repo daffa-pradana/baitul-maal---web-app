@@ -25,7 +25,6 @@ You can download and install it by clicking these sites below
    &nbsp;&nbsp; Accounting Staff: fateemadaud@gmail.com <br>
    &nbsp;&nbsp; Account Officer: rachelmona@gmail.com <br>
    &nbsp;&nbsp; Komite Pembiayaan: abdeenpatel@gmail.com <br>
-   &nbsp;&nbsp; Komite Pembiayaan: abdeenpatel@gmail.com <br>
    &nbsp;&nbsp; Teller: rachmawati@gmail.com <br>
    &nbsp;&nbsp; Password for all account is the same: 'password'
 
