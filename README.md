@@ -4,8 +4,6 @@ Web based groupware for Baitul Maal employee to do qardh financing work includin
 
 ## Getting Started
 
----
-
 ### Prequisites
 
 To Run it locally you only need a browser and XAMPP <br>
@@ -33,8 +31,6 @@ You can download and install it by clicking these sites below
 
 ## UI Design and Typhography
 
----
-
 you can simply click [here](https://www.behance.net/gallery/85772805/Baitul-Maal-Web-Application?) to preview:<br>
 
 - Dashboard
@@ -45,8 +41,6 @@ you can simply click [here](https://www.behance.net/gallery/85772805/Baitul-Maal
 
 ## Built with
 
----
-
 - PHP - Web Programming Language
 - HTML - Markup
 - CSS - Styling
@@ -55,7 +49,5 @@ you can simply click [here](https://www.behance.net/gallery/85772805/Baitul-Maal
 - SQL - DBMS
 
 ## Authors
-
----
 
 - Daffa Arravi
