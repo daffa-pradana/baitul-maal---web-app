@@ -1,4 +1,4 @@
-# Baitul maal Web-Apps
+# Baitul maal Web-App
 
 Web based groupware for Baitul Maal employee to do qardh financing work including survey, business monitoring, and financing proposal. The main idea is enabling employees to work on financing small business in remote areas.
 
